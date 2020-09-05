@@ -3,17 +3,18 @@
     "manifest_version": 2,
     "name": "MediumTamer",
     "version": "0.1",
-  
+
     "description": "a way to overcome Midium articles limitations ",
-  
+
     "icons": {
-    
+
     },
-  
+
     "content_scripts": [
       {
-
+        "matches": ["*://*.medium.com/*"],
+        "js": ["test.js"]
       }
     ]
-  
+
   }
