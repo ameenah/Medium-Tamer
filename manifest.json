@@ -6,14 +6,17 @@
 
     "description": "a way to overcome Midium articles limitations ",
 
-    "icons": {
-
+    "icons":{"128" : "icon_128.png"},
+    "browser_action":{
+        "default_icon": "icon_90.png",
+        "default_popup":"popup.html"
     },
+    "permissions":["activeTab"],
 
     "content_scripts": [
       {
         "matches": ["*://*.medium.com/*"],
-        "js": ["test.js"]
+        "js": [ "/js/js.cookie.js", "/js/test.js" ]
       }
     ]
 
