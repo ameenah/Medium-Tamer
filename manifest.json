@@ -1,23 +1,19 @@
 {
+  "name": "MediumTamer",
+  "description": "a way to overcome Midium articles limitations",
+  "version": "1.0",
+  "manifest_version": 3,
 
-    "manifest_version": 2,
-    "name": "MediumTamer",
-    "version": "0.1",
+  
+  "permissions": ["storage","activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "/images/icon_128.png"
+    }
+  },
 
-    "description": "a way to overcome Midium articles limitations ",
-
-    "icons":{"128" : "icon_128.png"},
-    "browser_action":{
-        "default_icon": "icon_90.png",
-        "default_popup":"popup.html"
-    },
-    "permissions":["activeTab"],
-
-    "content_scripts": [
-      {
-        "matches": ["*://*.medium.com/*"],
-        "js": [ "/js/js.cookie.js", "/js/test.js" ]
-      }
-    ]
-
+  "icons": {
+    "128": "/images/icon_128.png"
   }
+}
